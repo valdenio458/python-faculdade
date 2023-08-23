@@ -1,9 +1,8 @@
 lista = [10, 4, 1, 15, -3]
 
-lista1 = sorted(lista)
+lista1 = sorted(lista)  # Cria uma nova lista ordenada
+lista2 = lista.sort()   # Ordena a lista original e retorna None
 
-lista2 = lista.sort() # none
-
-print(lista1)
-print(lista2)
-print(lista)
+print(lista1)  # Imprime a nova lista ordenada
+print(lista2)  # Imprime None, porque o método sort() não retorna nada
+print(lista)   # Imprime a lista original, que foi ordenada in-place
