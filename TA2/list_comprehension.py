@@ -2,7 +2,7 @@ linguagens = ["Python", "JavaScript", "Ruby"]
 
 print("Antes da list_comprehension = ", linguagens)
 
-linguagens = [item.upper() for item in linguagens]
+linguagens = [item.upper() for item in linguagens if 'Ruby' in item]
 
 print("Após a list_comprehension = ", linguagens)
 
